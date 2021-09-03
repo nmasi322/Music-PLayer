@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <header>
-            <img src="logo.png" class="logo" alt="">
+            <img src="images/logo.png" class="logo" alt="">
             <div class="toggle"></div>
             <ul class="navigation">
                 <li><a href="#">Home</a></li>
@@ -25,12 +25,12 @@
         </div>
         <div class="content2">
             <p>Listen to your music now</p>
-            <img src="play.png" id="icon" alt="">
+            <img src="images/play.png" id="icon" alt="">
         </div>
-        <img src="phones.png" alt="" class="monkey">
+        <img src="images/phones.png" alt="" class="monkey">
     </div>
 
-    <audio src="samaritan.mp3" type="audio/mp3" id="music"></audio>
+    <audio src="images/samaritan.mp3" type="audio/mp3" id="music"></audio>
 
     <script>
         var music = document.getElementById("music");
@@ -39,11 +39,11 @@
         icon.onclick = function(){
             if(music.paused){
                 music.play();
-                icon.src = "pause.png";
+                icon.src = "images/pause.png";
             }
             else{
                 music.pause();
-                icon.src = "play.png";
+                icon.src = "images/play.png";
             }
         }
     </script>

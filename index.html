@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Landing Page</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" class="logo" alt="">
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header> 
+        <div class="content">
+            <h1 class="content-h1">Music Like <br><span class="style">Never Before</span> </h1>
+        </div>
+        <div class="content2">
+            <p>Listen to your music now</p>
+            <img src="play.png" id="icon" alt="">
+        </div>
+        <img src="phones.png" alt="" class="monkey">
+    </div>
+
+    <audio src="samaritan.mp3" type="audio/mp3" id="music"></audio>
+
+    <script>
+        var music = document.getElementById("music");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            if(music.paused){
+                music.play();
+                icon.src = "pause.png";
+            }
+            else{
+                music.pause();
+                icon.src = "play.png";
+            }
+        }
+    </script>
+</body>
+</html>
